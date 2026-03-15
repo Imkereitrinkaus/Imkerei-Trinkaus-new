@@ -16,12 +16,12 @@ const CONFIG = {
   },
 
   contact: {
-    inhaber:     'Vorname Nachname',          // ← anpassen
-    strasse:     'Musterstraße 12',           // ← anpassen
-    plz:         '58452',                     // ← anpassen
+    inhaber:     'Björn Trinkaus',          // ← anpassen
+    strasse:     'Am Stämmisch Busch 32',           // ← anpassen
+    plz:         '58455',                     // ← anpassen
     ort:         'Witten',
     land:        'Deutschland',
-    telefon:     '+49 2302 000000',           // ← anpassen
+    telefon:     '+49 176 21712753',           // ← anpassen
     email:       'imkerei@trinkaus-soehne.de',// ← anpassen
     emailLabel:  'imkerei@trinkaus-soehne.de',
   },
@@ -40,7 +40,7 @@ const CONFIG = {
 
   /* ── Footer ───────────────────────────────────────────── */
   footer: {
-    copyright: '© 2025 Trinkaus & Söhne, Witten',
+    copyright: '© 2026 Trinkaus & Söhne, Witten',
   },
 
   /* ── SEO: Meta-Daten pro Seite ────────────────────────── */
@@ -114,8 +114,8 @@ const CONFIG = {
   home: {
     hero: {
       eyebrow:  'Imkerei Witten & Umgebung',
-      headline: 'Echter Honig.<br><em>Von hier.</em>',
-      sub:      'Handgeschleudert, ungefiltert und direkt ab Imker — Trinkaus & Söhne steht für Honig, der nach dem schmeckt, was unsere Bienen in der Wittener Umgebung finden.',
+      headline: 'Honig.<br><em>Von unseren Bienen.</em>',
+      sub:      'Handgeschleudert und direkt ab Imker — Trinkaus & Söhne steht für Honig, der nach dem schmeckt, was unsere Bienen in der Wittener Umgebung finden.',
       cta1:     'Jetzt bestellen',
       cta2:     'Unsere Sorten',
     },
@@ -138,11 +138,6 @@ const CONFIG = {
           text:  'Jedes Glas entsteht von Hand — vom Volk bis zum Etikett.',
         },
         {
-          icon:  'heart',
-          title: 'Ohne Kompromisse',
-          text:  'Kein Zuckerwasser, keine Hitzebehandlung, kein Strecken.',
-        },
-        {
           icon:  'shield',
           title: 'Vertrauen',
           text:  'Hobby-Imkerei mit Namen und Gesicht — keine Anonymität, nur Ehrlichkeit.',
@@ -153,7 +148,7 @@ const CONFIG = {
       eyebrow: 'Über uns',
       headline: 'Eine Imkerei mit Haltung.',
       text1: 'Wir sind keine Fabrik und wollen es auch nicht sein. Trinkaus & Söhne ist eine Hobby-Imkerei aus Witten — gegründet aus Leidenschaft für Bienen, Natur und echten Geschmack.',
-      text2: 'Unsere Völker stehen an ausgesuchten Standorten rund um Witten. Wir kennen jedes Volk, jede Tracht — und wir wissen, was in jedem Glas steckt.',
+      text2: 'Unsere Völker stehen in Witten. Wir kennen jedes Volk, jede Tracht — und wir wissen, was in jedem Glas steckt.',
       cta:   'Mehr über uns',
     },
     ctaBanner: {
@@ -175,7 +170,7 @@ const CONFIG = {
       eyebrow:   'Die Imkerei',
       headline:  'Angefangen mit einem Volk.<br>Geblieben aus Überzeugung.',
       quote:     '„Wer einmal ein Bienenvolk beobachtet hat, versteht die Faszination sofort."',
-      founded:   '2019',
+      founded:   '2016',
       text1: 'Trinkaus & Söhne ist eine Hobby-Imkerei aus Witten — gegründet aus echtem Interesse an der Natur, an Bienen und an dem, was ein gutes Leben ausmacht. Was mit einem ersten Volk begann, ist heute eine kleine, aber bewusst betriebene Imkerei mit mehreren Völkern an ausgesuchten Standorten rund um Witten.',
       text2: 'Unsere Standorte liegen in artenreicher Umgebung: Streuobstwiesen, Waldränder, Kleingärten und blütenreiche Randstreifen. Wir wählen Plätze, an denen unsere Bienen wirklich etwas finden — und das schmeckt man.',
       text3: 'Wir sind kein Gewerbe und wollen keines sein. Die begrenzte Menge ist kein Mangel, sondern ein Zeichen von Echtheit. Jeder Jahrgang ist anders. Jedes Glas erzählt von einem Sommer, einem Frühling — von dem, was in Witten wächst.',
@@ -192,7 +187,6 @@ const CONFIG = {
       sub:      'Nicht als Marketingversprechen — sondern als Haltung.',
       items: [
         { num: '01', title: 'Tierwohl zuerst',    text: 'Unsere Bienen werden artgerecht gehalten. Wir entnehmen nur, was übrig ist — nicht was wir brauchen.' },
-        { num: '02', title: 'Keine Hitze',        text: 'Honig wird nicht erhitzt. Alle wertvollen Inhaltsstoffe, Enzyme und Aromen bleiben erhalten.'         },
         { num: '03', title: 'Ehrliche Mengen',    text: 'Wir strecken nicht und kaufen nicht zu. Was Sie kaufen, kam aus unseren Kästen.'                      },
         { num: '04', title: 'Direktvertrieb',     text: 'Kein Zwischenhändler. Direkt von uns zu Ihnen — mit Gesicht, Name und Verantwortung.'                  },
       ],
