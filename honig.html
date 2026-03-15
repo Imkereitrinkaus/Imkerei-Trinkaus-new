@@ -3,373 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unser Honig – Trinkaus & Söhne, Imkerei Witten</title>
-  <meta name="description" content="Frühlingsblüte und Sommertracht – handgeschleuderter Honig aus Witten, 500g für 7,50 €. Jede Sorte mit eigenem Charakter, direkt vom Imker.">
-  <meta name="keywords" content="Frühlingsblüte Honig, Sommertracht Honig, Blütenhonig Witten, Wildblütenhonig regional, Honig kaufen 500g">
+  <title>Unser Honig – Trinkaus & Söhne</title>
+  <meta name="description" content="">
   <link rel="stylesheet" href="styles.css">
   <style>
-    .product-detail {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: start;
-      margin-bottom: 5rem;
-      padding-bottom: 5rem;
-      border-bottom: 1px solid var(--cream-dark);
-    }
-    .product-detail:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-    }
-    .product-detail--reverse { direction: rtl; }
-    .product-detail--reverse > * { direction: ltr; }
-
-    .product-visual {
-      border-radius: var(--radius-lg);
-      aspect-ratio: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .product-visual__label {
-      font-family: var(--ff-script);
-      font-size: 3.5rem;
-      color: var(--dark);
-      position: relative;
-      z-index: 2;
-    }
-
-    .product-visual__bg {
-      position: absolute;
-      inset: 0;
-      opacity: .12;
-    }
-
-    .product-info__tag {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      background: var(--cream-dark);
-      border-radius: 2px;
-      padding: .3rem .8rem;
-      font-family: var(--ff-condensed);
-      font-weight: 600;
-      font-size: .72rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--charcoal);
-      margin-bottom: 1rem;
-    }
-
-    .product-info h2 {
-      margin-bottom: 1.25rem;
-    }
-
-    .product-info__desc {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: var(--mid);
-      margin-bottom: 2rem;
-    }
-
-    .product-info__details {
-      display: flex;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      padding: 1.5rem;
-      background: var(--cream);
-      border-radius: var(--radius-md);
-    }
-
-    .product-info__detail-item {
-      display: flex;
-      flex-direction: column;
-      gap: .25rem;
-    }
-
-    .product-info__detail-key {
-      font-family: var(--ff-condensed);
-      font-size: .72rem;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-      color: var(--mid);
-    }
-
-    .product-info__detail-val {
-      font-family: var(--ff-serif);
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--dark);
-    }
-
-    .taste-notes {
-      margin-top: 1rem;
-    }
-
-    .taste-notes h4 {
-      font-family: var(--ff-condensed);
-      font-size: .75rem;
-      letter-spacing: .16em;
-      text-transform: uppercase;
-      color: var(--mid);
-      margin-bottom: .75rem;
-    }
-
-    .taste-tags {
-      display: flex;
-      gap: .5rem;
-      flex-wrap: wrap;
-    }
-
-    .taste-tag {
-      background: var(--dark);
-      color: var(--honey);
-      font-family: var(--ff-condensed);
-      font-weight: 600;
-      font-size: .72rem;
-      letter-spacing: .08em;
-      padding: .3rem .75rem;
-      border-radius: 2px;
-    }
-
-    @media (max-width: 768px) {
-      .product-detail,
-      .product-detail--reverse {
-        grid-template-columns: 1fr;
-        direction: ltr;
-        gap: 2rem;
-      }
-    }
+    .product-detail { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; margin-bottom:5rem; padding-bottom:5rem; border-bottom:1px solid var(--cream-dark); }
+    .product-detail:last-child { border-bottom:none; margin-bottom:0; }
+    .product-detail--reverse { direction:rtl; }
+    .product-detail--reverse > * { direction:ltr; }
+    .product-visual { border-radius:var(--radius-lg); aspect-ratio:1; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; }
+    .product-visual__label { font-family:var(--ff-script); font-size:3.5rem; color:var(--dark); position:relative; z-index:2; }
+    .product-visual__bg { position:absolute; inset:0; opacity:.12; }
+    .product-info__tag { display:inline-flex; align-items:center; gap:.5rem; background:var(--cream-dark); border-radius:2px; padding:.3rem .8rem; font-family:var(--ff-condensed); font-weight:600; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--charcoal); margin-bottom:1rem; }
+    .product-info h2 { margin-bottom:1.25rem; }
+    .product-info__desc { font-size:1.05rem; line-height:1.8; color:var(--mid); margin-bottom:2rem; }
+    .product-info__details { display:flex; gap:2rem; margin-bottom:2rem; padding:1.5rem; background:var(--cream); border-radius:var(--radius-md); }
+    .product-info__detail-item { display:flex; flex-direction:column; gap:.25rem; }
+    .product-info__detail-key { font-family:var(--ff-condensed); font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--mid); }
+    .product-info__detail-val { font-family:var(--ff-serif); font-size:1.3rem; font-weight:700; color:var(--dark); }
+    .taste-notes { margin-top:1rem; }
+    .taste-notes h4 { font-family:var(--ff-condensed); font-size:.75rem; letter-spacing:.16em; text-transform:uppercase; color:var(--mid); margin-bottom:.75rem; }
+    .taste-tags { display:flex; gap:.5rem; flex-wrap:wrap; }
+    .taste-tag { background:var(--dark); color:var(--honey); font-family:var(--ff-condensed); font-weight:600; font-size:.72rem; letter-spacing:.08em; padding:.3rem .75rem; border-radius:2px; }
+    @media (max-width:768px) { .product-detail, .product-detail--reverse { grid-template-columns:1fr; direction:ltr; gap:2rem; } }
   </style>
 </head>
 <body>
-
-<nav class="nav" aria-label="Hauptnavigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Trinkaus & Söhne – Startseite">
-      <div class="nav__logo-mark">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#F0B429" stroke-width="2.2" fill="none">
-            <polygon points="30,4 40,9.5 40,20.5 30,26 20,20.5 20,9.5"/>
-            <polygon points="42,12 52,17.5 52,28.5 42,34 32,28.5 32,17.5"/>
-            <polygon points="18,12 28,17.5 28,28.5 18,34 8,28.5 8,17.5"/>
-            <polygon points="30,22 40,27.5 40,38.5 30,44 20,38.5 20,27.5"/>
-            <polygon points="42,30 52,35.5 52,46.5 42,52 32,46.5 32,35.5"/>
-            <polygon points="18,30 28,35.5 28,46.5 18,52 8,46.5 8,35.5"/>
-            <polygon points="30,40 40,45.5 40,56.5 30,62 20,56.5 20,45.5"/>
-          </g>
-        </svg>
-      </div>
-      <div class="nav__logo-text">
-        <span class="nav__logo-name">Trinkaus & Söhne</span>
-        <span class="nav__logo-sub">Imkerei · Witten</span>
-      </div>
-    </a>
-    <ul class="nav__links" id="navLinks">
-      <li><a href="index.html" class="nav__link">Start</a></li>
-      <li><a href="honig.html" class="nav__link">Unser Honig</a></li>
-      <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
-      <li><a href="bestellung.html" class="nav__link">Bestellen</a></li>
-    </ul>
-    <a href="bestellung.html" class="nav__cta">Jetzt bestellen</a>
-    <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- Page Hero -->
-<header class="page-hero">
-  <div class="container">
-    <span class="label">Trinkaus & Söhne</span>
-    <div class="divider" style="margin-bottom:1rem"></div>
-    <h1>Unser Honig.</h1>
-    <p style="font-size:1.1rem;color:var(--charcoal);margin-top:.75rem;max-width:52ch">
-      Zwei Sorten. Zwei Jahreszeiten. Ein Anspruch: so ehrlich wie möglich.
-    </p>
-  </div>
-</header>
-
-<!-- Product Cards Grid (JS-rendered) -->
+<nav class="nav" id="siteNav" aria-label="Hauptnavigation"></nav>
+<header class="page-hero" id="pageHero"></header>
 <section class="section section--cream">
   <div class="container">
     <div id="productsGrid" class="products-grid"></div>
   </div>
 </section>
-
-<!-- Product Details -->
 <section class="section">
   <div class="container">
-
-    <!-- Frühlingsblüte -->
-    <div class="product-detail">
-      <div class="product-visual" style="background:#F7C94A">
-        <svg class="product-visual__bg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#1C1C1B" stroke-width="2">
-            <polygon points="150,10 230,55 230,145 150,190 70,145 70,55"/>
-            <polygon points="150,40 210,75 210,145 150,180 90,145 90,75"/>
-          </g>
-        </svg>
-        <span class="product-visual__label">Frühlingsblüte</span>
-      </div>
-      <div class="product-info">
-        <div class="product-info__tag">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
-          Blütenhonig · Frühtracht
-        </div>
-        <h2>Frühlingsblüte</h2>
-        <p class="product-info__desc">
-          Wenn der erste Raps aufblüht, die Obstbäume ihre Blüten öffnen und der Löwenzahn 
-          die Wiesen gelb färbt — dann beginnt für unsere Bienen die Frühjahrssaison. 
-          Der Frühlingsblütenhonig ist das Ergebnis dieser ersten, intensiven Tracht: 
-          mild im Geschmack, golden in der Farbe, mit einer feinen floralen Süße, die 
-          weder aufdringlich noch banal ist.
-        </p>
-        <div class="product-info__details">
-          <div class="product-info__detail-item">
-            <span class="product-info__detail-key">Inhalt</span>
-            <span class="product-info__detail-val">500 g</span>
-          </div>
-          <div class="product-info__detail-item">
-            <span class="product-info__detail-key">Preis</span>
-            <span class="product-info__detail-val">7,50 €</span>
-          </div>
-          <div class="product-info__detail-item">
-            <span class="product-info__detail-key">Herkunft</span>
-            <span class="product-info__detail-val">Witten & Umgebung</span>
-          </div>
-        </div>
-        <div class="taste-notes">
-          <h4>Geschmacksprofil</h4>
-          <div class="taste-tags">
-            <span class="taste-tag">Mild</span>
-            <span class="taste-tag">Floral</span>
-            <span class="taste-tag">Fein-süß</span>
-            <span class="taste-tag">Goldgelb</span>
-            <span class="taste-tag">Cremig</span>
-          </div>
-        </div>
-        <div style="margin-top:2rem">
-          <a href="bestellung.html" class="btn btn--primary">Frühlingsblüte bestellen</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Sommertracht -->
-    <div class="product-detail product-detail--reverse">
-      <div class="product-visual" style="background:#D4922A">
-        <svg class="product-visual__bg" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#1C1C1B" stroke-width="2">
-            <polygon points="150,10 230,55 230,145 150,190 70,145 70,55"/>
-            <polygon points="150,40 210,75 210,145 150,180 90,145 90,75"/>
-          </g>
-        </svg>
-        <span class="product-visual__label" style="color:#fff">Sommertracht</span>
-      </div>
-      <div class="product-info">
-        <div class="product-info__tag">Wildblütenhonig · Sommertracht</div>
-        <h2>Sommertracht</h2>
-        <p class="product-info__desc">
-          Die Sommertracht ist unsere komplexeste Sorte. Linden, Phacelia, Kleewiesen, 
-          Wildkräuter und die Vielfalt der Wittener Umgebung hinterlassen ihren Charakter 
-          in diesem vielschichtigen Wildblütenhonig. Kräftiger im Aroma, tiefer in der Farbe — 
-          ein Honig für alle, die mehr als Süße suchen.
-        </p>
-        <div class="product-info__details">
-          <div class="product-info__detail-item">
-            <span class="product-info__detail-key">Inhalt</span>
-            <span class="product-info__detail-val">500 g</span>
-          </div>
-          <div class="product-info__detail-item">
-            <span class="product-info__detail-key">Preis</span>
-            <span class="product-info__detail-val">7,50 €</span>
-          </div>
-          <div class="product-info__detail-item">
-            <span class="product-info__detail-key">Herkunft</span>
-            <span class="product-info__detail-val">Witten & Umgebung</span>
-          </div>
-        </div>
-        <div class="taste-notes">
-          <h4>Geschmacksprofil</h4>
-          <div class="taste-tags">
-            <span class="taste-tag">Kräftig</span>
-            <span class="taste-tag">Würzig</span>
-            <span class="taste-tag">Vielschichtig</span>
-            <span class="taste-tag">Bernsteinfarben</span>
-            <span class="taste-tag">Aromatisch</span>
-          </div>
-        </div>
-        <div style="margin-top:2rem">
-          <a href="bestellung.html" class="btn btn--primary">Sommertracht bestellen</a>
-        </div>
-      </div>
-    </div>
-
+    <div id="productDetails"></div>
   </div>
 </section>
-
-<!-- Hinweis: Verfügbarkeit -->
-<section class="section--sm section--dark">
-  <div class="container" style="text-align:center">
-    <span class="label label--light">Hinweis zur Verfügbarkeit</span>
-    <div class="divider divider--center" style="background:var(--honey)"></div>
-    <p style="color:rgba(255,255,255,.7);font-size:1rem;max-width:56ch;margin:0 auto 1.5rem">
-      Unser Honig ist naturbedingt eine begrenzte Ernte. 
-      Die Verfügbarkeit einzelner Sorten kann saisonbedingt schwanken — 
-      fragen Sie uns direkt bei Ihrer Bestellung.
-    </p>
-    <a href="bestellung.html" class="btn btn--honey">Zur Bestellung</a>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <div>
-        <svg width="36" height="36" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#F0B429" stroke-width="2.2" fill="none">
-            <polygon points="30,4 40,9.5 40,20.5 30,26 20,20.5 20,9.5"/>
-            <polygon points="42,12 52,17.5 52,28.5 42,34 32,28.5 32,17.5"/>
-            <polygon points="18,12 28,17.5 28,28.5 18,34 8,28.5 8,17.5"/>
-            <polygon points="30,22 40,27.5 40,38.5 30,44 20,38.5 20,27.5"/>
-            <polygon points="42,30 52,35.5 52,46.5 42,52 32,46.5 32,35.5"/>
-            <polygon points="18,30 28,35.5 28,46.5 18,52 8,46.5 8,35.5"/>
-            <polygon points="30,40 40,45.5 40,56.5 30,62 20,56.5 20,45.5"/>
-          </g>
-        </svg>
-        <p class="footer__brand-name">Trinkaus & Söhne</p>
-        <p class="footer__tagline">Honig aus Witten und Umgebung. Regional, handgemacht, ehrlich.</p>
-      </div>
-      <div>
-        <p class="footer__heading">Navigation</p>
-        <ul class="footer__links">
-          <li><a href="index.html" class="footer__link">Startseite</a></li>
-          <li><a href="honig.html" class="footer__link">Unser Honig</a></li>
-          <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
-          <li><a href="bestellung.html" class="footer__link">Bestellen & Kontakt</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer__heading">Rechtliches</p>
-        <ul class="footer__links">
-          <li><a href="impressum.html" class="footer__link">Impressum</a></li>
-          <li><a href="datenschutz.html" class="footer__link">Datenschutz</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <span>© 2025 Trinkaus & Söhne, Witten</span>
-      <div class="footer__legal">
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+<section class="section--sm section--dark" id="availabilityNote"></section>
+<footer class="footer" id="siteFooter"></footer>
+<script src="config.js"></script>
+<script src="components.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

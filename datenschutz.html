@@ -3,46 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz – Trinkaus & Söhne, Imkerei Witten</title>
+  <title>Datenschutz – Trinkaus & Söhne</title>
   <meta name="robots" content="noindex, follow">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<nav class="nav" aria-label="Hauptnavigation">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__logo" aria-label="Trinkaus & Söhne – Startseite">
-      <div class="nav__logo-mark">
-        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#F0B429" stroke-width="2.2" fill="none">
-            <polygon points="30,4 40,9.5 40,20.5 30,26 20,20.5 20,9.5"/>
-            <polygon points="42,12 52,17.5 52,28.5 42,34 32,28.5 32,17.5"/>
-            <polygon points="18,12 28,17.5 28,28.5 18,34 8,28.5 8,17.5"/>
-            <polygon points="30,22 40,27.5 40,38.5 30,44 20,38.5 20,27.5"/>
-            <polygon points="42,30 52,35.5 52,46.5 42,52 32,46.5 32,35.5"/>
-            <polygon points="18,30 28,35.5 28,46.5 18,52 8,46.5 8,35.5"/>
-            <polygon points="30,40 40,45.5 40,56.5 30,62 20,56.5 20,45.5"/>
-          </g>
-        </svg>
-      </div>
-      <div class="nav__logo-text">
-        <span class="nav__logo-name">Trinkaus & Söhne</span>
-        <span class="nav__logo-sub">Imkerei · Witten</span>
-      </div>
-    </a>
-    <ul class="nav__links" id="navLinks">
-      <li><a href="index.html" class="nav__link">Start</a></li>
-      <li><a href="honig.html" class="nav__link">Unser Honig</a></li>
-      <li><a href="ueber-uns.html" class="nav__link">Über uns</a></li>
-      <li><a href="bestellung.html" class="nav__link">Bestellen</a></li>
-    </ul>
-    <a href="bestellung.html" class="nav__cta">Jetzt bestellen</a>
-    <button class="nav__toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
+<nav class="nav" id="siteNav" aria-label="Hauptnavigation"></nav>
 <header class="page-hero">
   <div class="container">
     <span class="label">Rechtliches</span>
@@ -50,184 +16,55 @@
     <h1>Datenschutz.</h1>
   </div>
 </header>
-
 <section class="section">
   <div class="container">
     <div class="prose">
-
       <h2>1. Datenschutz auf einen Blick</h2>
 
       <h3>Allgemeine Hinweise</h3>
-      <p>
-        Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
-        personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene 
-        Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.
-      </p>
+      <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
 
       <h3>Datenerfassung auf dieser Website</h3>
-      <p>
-        <strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong><br>
-        Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. 
-        Dessen Kontaktdaten können Sie dem <a href="impressum.html">Impressum</a> entnehmen.
-      </p>
-      <p>
-        <strong>Wie erfassen wir Ihre Daten?</strong><br>
-        Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen — 
-        zum Beispiel durch Eingabe in unser Bestellformular. 
-        Andere Daten werden beim Besuch der Website automatisch durch unsere IT-Systeme 
-        erfasst (technische Daten wie Browser, Betriebssystem, Uhrzeit des Seitenaufrufs).
-      </p>
-      <p>
-        <strong>Wofür nutzen wir Ihre Daten?</strong><br>
-        Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website 
-        zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet 
-        werden. Bestelldaten werden ausschließlich zur Abwicklung Ihrer Anfrage genutzt.
-      </p>
+      <p><strong>Wer ist verantwortlich?</strong><br>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem <a href="impressum.html">Impressum</a> entnehmen.</p>
+      <p><strong>Wie erfassen wir Ihre Daten?</strong><br>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen — zum Beispiel durch Eingabe in unser Bestellformular. Andere Daten werden beim Besuch der Website automatisch durch unsere IT-Systeme erfasst.</p>
+      <p><strong>Wofür nutzen wir Ihre Daten?</strong><br>Bestelldaten werden ausschließlich zur Abwicklung Ihrer Anfrage genutzt.</p>
 
       <h2>2. Hosting</h2>
-      <p>
-        Diese Website wird bei einem externen Dienstleister gehostet (Hoster). 
-        Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf 
-        den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um IP-Adressen, 
-        Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, 
-        Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.
-      </p>
+      <p>Diese Website wird bei einem externen Dienstleister gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert.</p>
 
-      <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
-
-      <h3>Datenschutz</h3>
-      <p>
-        Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. 
-        Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der 
-        gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.
-      </p>
-
-      <h3>Hinweis zur verantwortlichen Stelle</h3>
-      <p>
-        Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br><br>
-        Trinkaus & Söhne, Hobby-Imkerei<br>
-        [Vorname Nachname]<br>
-        [Straße Hausnummer], 58[xxx] Witten<br>
-        E-Mail: <a href="/cdn-cgi/l/email-protection#d4bdb9bfb1a6b1bd94a0a6bdbabfb5a1a7f9a7bbb1bcbab1fab0b1"><span class="__cf_email__" data-cfemail="2c454147495e49456c585e4542474d595f015f4349444249024849">[email&#160;protected]</span></a>
-      </p>
-      <p>
-        Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder 
-        gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von 
-        personenbezogenen Daten entscheidet.
-      </p>
+      <h2>3. Verantwortliche Stelle</h2>
+      <p class="js-legal-address"></p>
+      <p class="js-legal-contact"></p>
 
       <h3>Speicherdauer</h3>
-      <p>
-        Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer 
-        genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck 
-        für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen 
-        geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden 
-        Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für 
-        die Speicherung Ihrer personenbezogenen Daten haben.
-      </p>
+      <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt.</p>
 
       <h3>Ihre Rechte</h3>
-      <p>
-        Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, 
-        Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten. 
-        Sie haben außerdem ein Recht auf Berichtigung oder Löschung dieser Daten. 
-        Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit 
-        an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen 
-        Aufsichtsbehörde zu.
-      </p>
+      <p>Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten sowie ein Recht auf Berichtigung oder Löschung. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
 
       <h2>4. Datenerfassung auf dieser Website</h2>
 
       <h3>Kontaktformular / Bestellformular</h3>
-      <p>
-        Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben aus 
-        dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten 
-        zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. 
-        Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
-      </p>
-      <p>
-        Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, 
-        sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur 
-        Durchführung vorvertraglicher Maßnahmen erforderlich ist. 
-        In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse 
-        an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) 
-        oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.
-      </p>
-      <p>
-        Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, 
-        bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen 
-        oder der Zweck für die Datenspeicherung entfällt 
-        (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). 
-        Zwingende gesetzliche Bestimmungen — insbesondere Aufbewahrungsfristen — bleiben 
-        unberührt.
-      </p>
+      <p>Wenn Sie uns per Formular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+      <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt, oder auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Bearbeitung von Anfragen).</p>
 
-      <h3>Keine Analyse-Tools, keine Tracking-Dienste</h3>
-      <p>
-        Diese Website verwendet keine Analyse-Tools, kein Google Analytics, 
-        keine Social-Media-Pixel und keine sonstigen Tracking-Dienste. 
-        Wir verzichten bewusst auf jede Form der Nutzerverfolgung.
-      </p>
+      <h3>Keine Analyse-Tools, kein Tracking</h3>
+      <p>Diese Website verwendet kein Google Analytics, keine Social-Media-Pixel und keine sonstigen Tracking-Dienste. Wir verzichten bewusst auf jede Form der Nutzerverfolgung.</p>
 
       <h3>Externe Schriftarten (Google Fonts)</h3>
-      <p>
-        Diese Website bindet Schriftarten von Google Fonts ein. 
-        Dabei wird beim Laden der Seite eine Verbindung zu den Servern von Google hergestellt. 
-        Hierbei wird Ihre IP-Adresse an Google übermittelt. 
-        Weitere Informationen finden Sie in der Datenschutzerklärung von Google: 
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-          policies.google.com/privacy
-        </a>.
-      </p>
+      <p>Diese Website bindet Schriftarten von Google Fonts ein. Dabei wird beim Laden der Seite eine Verbindung zu den Servern von Google hergestellt und Ihre IP-Adresse übermittelt. Weitere Informationen: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
 
       <h2>5. Widerspruch gegen Werbe-E-Mails</h2>
-      <p>
-        Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten 
-        zur Übersendung von nicht ausdrücklich angeforderter Werbung und 
-        Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten 
-        behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten 
-        Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.
-      </p>
+      <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung wird hiermit widersprochen.</p>
 
-      <p style="margin-top:3rem;color:var(--mid);font-size:.85rem">
-        Stand: 2025 · 
-        Diese Datenschutzerklärung wurde auf Basis aktueller gesetzlicher Anforderungen 
-        erstellt und sollte bei Bedarf mit einem Rechtsanwalt abgestimmt werden.
-      </p>
-
-      <p style="margin-top:2rem">
-        <a href="index.html" class="btn btn--outline">← Zurück zur Startseite</a>
-      </p>
-
+      <p style="margin-top:3rem;color:var(--mid);font-size:.85rem">Stand: 2025 · Diese Datenschutzerklärung sollte bei Bedarf mit einem Rechtsanwalt abgestimmt werden.</p>
+      <p style="margin-top:2rem"><a href="index.html" class="btn btn--outline">← Zurück zur Startseite</a></p>
     </div>
   </div>
 </section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer__inner">
-      <div>
-        <p class="footer__brand-name">Trinkaus & Söhne</p>
-        <p class="footer__tagline">Honig aus Witten und Umgebung.</p>
-      </div>
-      <div>
-        <p class="footer__heading">Navigation</p>
-        <ul class="footer__links">
-          <li><a href="index.html" class="footer__link">Startseite</a></li>
-          <li><a href="honig.html" class="footer__link">Unser Honig</a></li>
-          <li><a href="ueber-uns.html" class="footer__link">Über uns</a></li>
-          <li><a href="bestellung.html" class="footer__link">Bestellen</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer__heading">Rechtliches</p>
-        <ul class="footer__links">
-          <li><a href="impressum.html" class="footer__link">Impressum</a></li>
-          <li><a href="datenschutz.html" class="footer__link">Datenschutz</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <span>© 2025 Trinkaus & Söhne, Witten</span>
-      <div class="footer__legal">
-        <a href="impressum.html">Impressu
+<footer class="footer" id="siteFooter"></footer>
+<script src="config.js"></script>
+<script src="components.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
